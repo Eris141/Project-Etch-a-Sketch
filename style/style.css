@@ -23,9 +23,7 @@ body {
   box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
 
-.color {
-  background-color: purple;
-}
+
 
 .btndiv {
   width: fit-content;

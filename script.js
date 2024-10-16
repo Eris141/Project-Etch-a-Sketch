@@ -22,7 +22,8 @@ function createGrid(gridSquare = 16) {
     gridContainer.appendChild(rows);
     rows.addEventListener('mouseover', (e) => {
       if (e.target.classList.contains("border")) {
-        e.target.classList.add('color');
+        let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        e.target.style.backgroundColor = randomColor;
       }
     })
   }
