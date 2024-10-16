@@ -1,24 +1,39 @@
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: #f0f0f0;
 }
+
 .container {
-  height: auto;
-  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 42px;
-  padding: 32px;
+  flex-direction: column;
+  width: 900px;  /* Fixed width for the container */
+  height: 900px; /* Fixed height for the container */
 }
 
 .rows {
   display: flex;
-  width: 48px;
-  height: 48px;
-  border: 1px solid #000;
+}
+
+.border {
+  border: 1px solid #707070;
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
 
 .color {
   background-color: purple;
+}
+
+.btndiv {
+  width: fit-content;
+  display: flex;
+  margin: 32px;
+}
+
+.button {
+  padding: 16px 24px;
+  font-size: 16px;
 }
